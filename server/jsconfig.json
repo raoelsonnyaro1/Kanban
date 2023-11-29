@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "middlewares/*": ["src/middlewares/*"],
+      "models/*": ["src/models/*"]
+    }
+  },
+  "include": ["src/**/*.js"],
+  "exclude": ["node_modules", "**/node_modules", "dist"]
+}

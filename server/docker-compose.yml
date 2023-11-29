@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - 27017:27017
+    container_name: crm_database
+  mailcatcher:
+    restart: on-failure
+    image: dockage/mailcatcher:0.8.2
+    ports:
+    - "1080:1080"
+    - "1025:1025"
